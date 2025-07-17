@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+custom_gift_send/__init__.py
+custom_gift_send/custom_gift_send.py
+custom_gift_send.egg-info/PKG-INFO
+custom_gift_send.egg-info/SOURCES.txt
+custom_gift_send.egg-info/dependency_links.txt
+custom_gift_send.egg-info/requires.txt
+custom_gift_send.egg-info/top_level.txt
