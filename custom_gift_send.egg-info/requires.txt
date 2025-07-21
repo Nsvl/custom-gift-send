@@ -1,7 +1,5 @@
 aiohttp>=3.8.4
 pydantic>=2.0.3
-cachetools>=5.3.1
-pybreaker>=1.1.0
 cryptography>=41.0.0
 
 [dev]
@@ -11,10 +9,24 @@ pytest-cov>=4.0.0
 black>=23.0.0
 isort>=5.12.0
 mypy>=1.0.0
+flake8>=6.0.0
+pre-commit>=3.0.0
 
 [docs]
 sphinx>=6.0.0
 sphinx-rtd-theme>=1.2.0
+sphinx-autodoc-typehints>=1.20.0
 
 [monitoring]
 prometheus-client>=0.17.0
+grafana-api>=1.0.3
+
+[performance]
+orjson>=3.8.0
+
+[performance:sys_platform != "win32"]
+uvloop>=0.17.0
+
+[security]
+bandit>=1.7.5
+safety>=2.3.0

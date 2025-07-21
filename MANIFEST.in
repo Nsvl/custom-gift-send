@@ -1,0 +1,21 @@
+# Включить важные файлы в дистрибутив
+include README.md
+include LICENSE
+include CHANGELOG.md
+include requirements.txt
+include pyproject.toml
+
+# Включить файлы типизации
+include custom_gift_send/py.typed
+
+# Исключить файлы разработки
+exclude .gitignore
+exclude .pre-commit-config.yaml
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * *.orig
+recursive-exclude * *.rej
+recursive-exclude * .DS_Store
+recursive-exclude tests *
+recursive-exclude docs *
+recursive-exclude examples *
